@@ -1,0 +1,32 @@
+.products {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-sm {
+    margin-right: 30px;
+    margin-bottom: 35px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card-sm:hover {
+    transform: scale(1.1);
+}
+
+.card-sm > .tea-img > img{
+    width: 310px;
+    height: 207px;
+}
+.card-sm > .tea-desc p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #1c1b1b;
+}

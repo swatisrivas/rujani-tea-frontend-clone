@@ -1,0 +1,161 @@
+<div class="home-section">
+  <div class="banners">
+    <div class="dark-bg"></div>
+    <carousel
+      [images]="bannerImages"
+      [dots]=true
+      [arrows]=false
+      [autoplay]=true
+      [autoplayInterval]="10000"
+      [pauseOnHover]=true
+      [margin]="0"
+      [cellsToShow]="1"
+      [height]="650"
+    >
+    </carousel>
+  </div>
+  <div class="arrow">
+    <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+  </div>
+  <div class="tea-categories">
+    <div class="title"><span>Our best sellers</span></div>
+    <div class="categories">
+      <div class="category" (click)="changeSMCat(true)">White Tea</div>
+      <div class="category" (click)="changeSMCat(false)">Black Tea</div>
+    </div>
+    <div class="cat-tea white-cat" *ngIf="showWhite">
+      <div class="card-sm">
+        <div class="tea-img signature-white"></div>
+        <div class="tes-desc">
+          <p>SIGNATURE WHITE</p>
+          <p>RS. 400</p>
+        </div>
+      </div>
+      <div class="card-sm">
+        <div class="tea-img silky-silver"></div>
+        <div class="tes-desc">
+          <p>SILKY SILVER NEEDLE</p>
+          <p>RS. 400</p>
+        </div>
+      </div>
+    </div>
+    <div class="cat-tea black-cat" *ngIf="!showWhite">
+      <div class="card-sm">
+        <div class="tea-img tippy-reserve"></div>
+        <div class="tes-desc">
+          <p>TIPPY RESERVE</p>
+          <p>RS. 220</p>
+        </div>
+      </div>
+      <div class="card-sm">
+        <div class="tea-img royale"></div>
+        <div class="tes-desc">
+          <p>ROYALE GOLDEN CTC</p>
+          <p>RS. 300</p>
+        </div>
+      </div>
+      <div class="card-sm">
+        <div class="tea-img morning"></div>
+        <div class="tes-desc">
+          <p>MORNING SPECIAL</p>
+          <p>RS. 150</p>
+        </div>
+      </div>
+      <div class="card-sm">
+        <div class="tea-img somky"></div>
+        <div class="tes-desc">
+          <p>SMOKY ECSTASY</p>
+          <p>RS. 200</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="/all-teas"><div class="view-all">VIEW ALL PRODUCTS</div></a>
+  <div class="tea-categories-xl">
+    <div class="card-xl" *ngFor="let tea of teaCat">
+      <div class="dark-bg"></div>
+      <img src="{{ tea.img }}" />
+      <div class="text">
+        <p class="title">
+          {{ tea.title }}
+        </p>
+        <a href="{{'teas/' + tea.identity}}">
+          <div class="view-btn">VIEW PRODUCTS</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="history">
+    <img src="assets/images/homepage/barooahs.jpeg" />
+    <div class="description">
+      <p class="sub-title">FOUNDING FATHERS</p>
+      <p classs="title">KHONGIYA BAROOAHS OF THENGAL</p>
+      <p class="info">
+        The farmer-founders of Rujani Tea set up Aideobari Tea Estates in the
+        northeast Indian state of Assam.
+      </p>
+      <p class="info">
+        Standing (L to R) is Siva Prasad Barooah, Heramba Prasad Barooah and
+        Sashi Prasad Barooah, along with their families.
+      </p>
+    </div>
+  </div>
+  <p class="year">1897</p>
+  <div class="testimonials">
+    <carousel
+      [dots]="true"
+      [margin]="0"
+      [loop]="true"
+      [cellsToShow]="1"
+      [height]="350"
+    >
+      <div class="section">
+        <p class="para">
+          <em
+            ><strong
+              >This (is) absolutely the best black tea I have tasted this year -
+              even better than Jin Jun Mei.</strong
+            ></em
+          >
+        </p>
+        <p class="author">
+          - Alexis Kaae, <br />Vice President - European Tea Society
+        </p>
+      </div>
+      <div class="section">
+        <p class="para">
+          <em
+            ><strong
+              >Silver Pearl - my new addiction, watching the pearls unfurl is so
+              calming. Fragrant, soft and so drinkable.</strong
+            ></em
+          >
+        </p>
+        <p class="author">
+          - Thanks again, a new devoTEA, <br />Leanne Blandford
+        </p>
+      </div>
+      <div class="section">
+        <p class="para">
+          <em
+            ><strong
+              >I am enjoying it (Signature White). It has a floral warmth that
+              is a nice substitute for my usual green teas I like in the
+              morning. Perfect for the cooler days.</strong
+            ></em
+          >
+        </p>
+        <p class="author">- Amanda Low, Melbourne Tea Sommelier</p>
+      </div>
+    </carousel>
+  </div>
+  <div class="desc-img">
+    <div class="dark-bg"></div>
+    <p class="temp">27.0460976°N, 95.0723523°E</p>
+    <p class="desc">FROM OUR TEA FARM IN ASSAM TO YOU, DIRECT!</p>
+    <p class="desc-sub">
+      We aspire to be a tea brand of choice and without any intermediary: direct
+      from our tea farms in Assam to your cup.
+    </p>
+  </div>
+</div>

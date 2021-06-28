@@ -1,0 +1,274 @@
+.home-section {
+  background-color: #efefef;
+}
+.banners {
+  position: absolute;
+  top: -120px;
+  left: 0;
+  width: 100vw;
+  max-width: 98.932vw !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: calc(100% - 35px);
+  position: relative;
+}
+.dark-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    margin: -100px auto 10px auto;
+}
+
+.tea-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+}
+.tea-categories .categories {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.tea-categories .categories a {
+  text-decoration: none;
+}
+
+.tea-categories .category {
+  cursor: pointer;
+}
+
+.tea-categories > .title {
+  margin: 22px 0px;
+}
+.cat-tea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.card-sm > .tea-img {
+  width: 199px;
+  height: 133px;
+}
+
+.tea-img {
+  background-size: cover;
+}
+.white-cat {
+  width: 37%;
+}
+.black-cat {
+  width: 70%;
+}
+
+.signature-white {
+  background-image: url("../../assets/images/homepage/signature-white.jpg");
+}
+.signature-white:hover {
+  background-image: url("../../assets/images/homepage/signature-white-cup.jpg");
+}
+.silky-silver {
+  background-image: url("../../assets/images/homepage/silky-silver-needle.jpg");
+}
+.silky-silver:hover {
+  background-image: url("../../assets/images/homepage/silky-white-cup.jpg");
+}
+.tippy-reserve {
+  background-image: url("../../assets/images/homepage/tippy-reserve.jpg");
+}
+.tippy-reserve:hover {
+  background-image: url("../../assets/images/homepage/tippy-reserve-cup.jpg");
+}
+.royale {
+  background-image: url("../../assets/images/homepage/royal-golden-ctc.jpg");
+}
+.royale:hover {
+  background-image: url("../../assets/images/homepage/royal-golden-ctc-cup.jpg");
+}
+.morning {
+  background-image: url("../../assets/images/homepage/morning-special.jpg");
+}
+.morning:hover {
+  background-image: url("../../assets/images/homepage/morning-special-cup.jpg");
+}
+.somky {
+  background-image: url("../../assets/images/homepage/smoky-ecstasy.jpg");
+}
+.somky:hover {
+  background-image: url("../../assets/images/homepage/smoky-ecstasy-cup.jpg");
+}
+
+.view-all {
+  width: 230px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin: 50px auto;
+}
+
+.tea-categories-xl {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-xl {
+  position: relative;
+  height: 600px;
+  width: 466px;
+  margin: 40px auto;
+}
+
+.card-xl img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 600px;
+  width: 466px;
+  object-fit: cover;
+}
+
+.card-xl .text {
+  position: absolute;
+  bottom: 50px;
+  text-transform: uppercase;
+  z-index: 999999;
+  color: #fff;
+  width: 100%;
+  padding-left: 45px;
+}
+
+.text .title {
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.2em;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.text .view-btn {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #1e1e1e;
+  cursor: pointer;
+}
+.history {
+  width: 1230px;
+  height: 515px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.history img {
+  width: 640px;
+  height: 515px;
+  object-fit: cover;
+}
+.history .description {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin-right: 30px;
+  margin-bottom: 70px;
+  letter-spacing: 0.1em;
+}
+.history .sub-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  color: #1c1b1b;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.history .title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #1c1b1b;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.history .info {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  color: #1c1b1b;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.year {
+  width: 70px;
+  margin: 40px auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.testimonials {
+  background-color: #20582b;
+  /* padding-top: 50px; */
+}
+.testimonials .section {
+  /* width: 300px; */
+}
+
+.testimonials p em strong {
+  color: #e8b05b;
+}
+.testimonials p {
+  color: #e8b05b;
+  text-align: center;
+  width: 100%;
+}
+
+.desc-img {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../assets/images/homepage/tea-farm.jpg");
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc-img p {
+  z-index: 999999;
+  color: white;
+  margin: 15px 0;
+}

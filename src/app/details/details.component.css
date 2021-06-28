@@ -1,0 +1,129 @@
+.details-section {
+    width: 100%;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #1c1b1b;
+    letter-spacing: 0.2em;
+}
+
+.left {
+    width: 600px;
+    height: 600px;
+}
+
+.left img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+}
+.right {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.site-name, .category, .type, .price {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.category, .type {
+    font-size: 18px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1c1b1b;
+    transition: color .2s ease-in-out;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 16px;
+    color: #6a6a6a;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #1c1b1b;
+    transition: color .2s ease-in-out;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+.desc {
+    font-family: "Nunito Sans",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1c1b1b;
+    line-height: 1.65;
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.weight-block {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 10px 0px;
+}
+
+.weight-block>.title {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.weight {
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.quantity {
+    margin-top: 10px;
+}
+
+.buy{
+    background-color: black;
+    color: white;
+    line-height: 2.5;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.count-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: -10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.plus, .minus {
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+.minus {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+.count {
+    width: 50px;
+    height: 25px;
+    color: #1e1b1b;
+    text-align: center;
+}

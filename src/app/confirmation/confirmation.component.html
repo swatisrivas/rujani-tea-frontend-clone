@@ -1,0 +1,16 @@
+<div class="modal">
+    <i class="close-icon" aria-hidden="true" (click)="close()">X</i>
+  <div class="content" *ngIf="!submited">
+    <div class="prompt">
+      Please provide your email.<br />We will get back to you shortly for
+      further details.
+    </div>
+    <input class="email" placeholder="Enter you email" required />
+    <div class="submit" (click)="onSubmit()">Submit</div>
+  </div>
+  <div class="congrats" *ngIf="submited">
+    <p class="msg">Thank you for you interest.</p>
+    <p class="msg">Order Quantity: {{ quantity }} KG</p>
+    <div class="close-btn" (click)="close()">Close</div>
+  </div>
+</div>

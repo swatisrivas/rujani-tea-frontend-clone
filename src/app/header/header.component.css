@@ -1,0 +1,57 @@
+.header {
+  max-width: none;
+  padding: 0px !important;
+  background: transparent;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  z-index: 999999;
+}
+.black-font {
+  color: black !important;
+}
+.logo {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search {
+  position: absolute;
+  right: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  background-color: unset !important;
+}
+
+.navbar ul {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #FFF;
+  letter-spacing: 0.2em;
+  font-size: 12px;
+}
+
+.nav-link {
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
+}

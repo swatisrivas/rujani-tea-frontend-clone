@@ -1,0 +1,11 @@
+<div class="products">
+  <div class="card-sm" *ngFor="let tea of teas" (click)="goToProduct(tea.productId)">
+      <div class="tea-img">
+        <img src="{{ tea.imageUrl }}" />
+      </div>
+      <div class="tea-desc">
+        <p>{{ tea.name }}</p>
+        <p>RS. {{ tea.pricePerKg }}/KG</p>
+      </div>
+  </div>
+</div>

@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #1c1b1b;
+  transition: color 0.2s ease-in-out;
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none !important;
+}

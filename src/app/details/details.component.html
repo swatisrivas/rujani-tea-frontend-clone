@@ -1,0 +1,48 @@
+<div class="details-section">
+  <div class="left">
+    <img src="{{ tea.imageUrl }}" />
+  </div>
+  <div class="right">
+    <div class="main">
+      <p class="site-name">RujaniTea.com</p>
+      <p class="category">{{ tea.category }}</p>
+      <p class="type">{{ tea.type }}</p>
+      <p class="price">RS. {{ tea.pricePerKg }}</p>
+    </div>
+    <div class="desc">
+      <!-- {{ tea.description }} -->
+      Here at Rujani, we consider white tea a bit of a ‘hidden treasure’.<br />
+      Ideally enjoyed in the evening to promote calmness, you’ll notice a
+      pleasing floral aroma when brewing our popular Signature White tea, along
+      with a golden hue tone in appearance.<br /><br />
+      The presence of leaves makes this refreshing white tea slightly robust and
+      full of flavour.<br /><br />
+      We’d love to know your thoughts!
+    </div>
+    <div class="weight-block">
+      <span class="title">WEIGHT:</span><span class="weight">1 KG</span>
+    </div>
+    <div class="quantity">
+      <p>Quantity:</p>
+    </div>
+    <div
+      class="count-block"
+      style="
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -o-user-select: none;
+      "
+      unselectable="on"
+      onselectstart="return false;"
+      onmousedown="return false;"
+    >
+      <div class="plus" (click)="increaseCount()">+</div>
+      <div class="count">{{ count }}</div>
+      <div class="minus" (click)="decreaseCount()">-</div>
+    </div>
+    <button class="buy" (click)="onBuy()">Buy it Now</button>
+  </div>
+  <app-confirmation *ngIf="showConfirmation" [onClose]="closeConfirmation" [quantity]="getQuantity()"></app-confirmation>
+</div>
